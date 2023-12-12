@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 921px;
+    height: 500px;
+    border-radius: 7px;
+    background-color: yellowgreen;
+    display: grid;
+    grid-auto-flow: column;
+    overflow: hidden;
+}
+
+.card {
+    width: 307px;
+}
+
+.card:nth-of-type(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card-body {
+    margin: 45px 50px;
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.68em;
+    text-transform: uppercase;
+}
+
+.card-text {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8em;
+}
+
+.card-action {
+    width: 150px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    margin-top: 4.4em;
+    text-transform: capitalize;
+}
+
+.card-action:active,
+.card-action:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%) !important;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.card:nth-of-type(1) .card-action {
+    color: hsl(31, 77%, 52%);
+}
+
+.card:nth-of-type(2) .card-action {
+    color: hsl(184, 100%, 22%);
+}
+
+.card:nth-of-type(3) .card-action {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: auto;
+        height: auto;
+        grid-auto-flow: row;
+        overflow: unset;
+        margin: 1em 0;
+        -webkit-clip-path: inset(0 0 0 0 round 10px);
+        clip-path: inset(0 0 0 0 round 10px);
+    }
+}
