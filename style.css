@@ -18,7 +18,6 @@ body {
     width: 921px;
     height: 500px;
     border-radius: 7px;
-    background-color: yellowgreen;
     display: grid;
     grid-auto-flow: column;
     overflow: hidden;
